@@ -1,0 +1,89 @@
+<html lang="pt">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <!-- Angular Material style sheet -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body ng-app="mrl" ng-cloak>
+    <div ng-controller="MainController">
+        <md-toolbar md-scroll-shrink>
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Menu" ng-click="toggleLeft()">
+                    <md-icon>menu</md-icon>
+                </md-button>
+
+            </div>
+        </md-toolbar>
+
+
+        <section layout="row" flex>
+
+            <md-sidenav class="md-sidenav-left md-whiteframe-4dp" md-component-id="left" class="toolbar-fixed">
+
+                <md-toolbar class="md-theme-green">
+                    <div class="md-toolbar-tools">
+                        <md-button class="md-icon-button" aria-label="Voltar" ng-click="toggleLeft()">
+                            <md-icon>chevron_left</md-icon>
+                        </md-button>
+                        <h1 class="md-toolbar-tools">Menu</h1>
+                    </div>
+                </md-toolbar>
+
+                <md-content layout-margin>
+                    <md-list flex>
+                        <md-list-item ng-click="noticias()">
+                            <md-icon ng-bind="'local_library'" style="color:#000;" aria-lable="news"></md-icon>
+                            <p> Notícias </p>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item ng-click="telefones()">
+                            <md-icon ng-bind="'phone'" style="color:#000;"></md-icon>
+                            <p> Ramais </p>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item ng-click="configuracao()">
+                            <md-icon ng-bind="'settings'" style="color:#000;"></md-icon>
+                            <p> Configuração </p>
+                        </md-list-item>
+                    </md-list>
+                </md-content>
+
+            </md-sidenav>
+        </section>
+
+
+
+        <div ng-view></div>
+
+    </div>
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="./bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="./bower_components/angular-material/angular-material.min.js"></script>
+
+    <!-- Your application bootstrap  -->
+    <script src="./js/app.js"></script>
+    <script src="./js/NoticiasController.js"></script>
+    <script src="./js/TelefonesController.js"></script>
+    <script src="./js/ConfiguracaoController.js"></script>
+
+</body>
+
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at https://material.angularjs.org/license.
+-->

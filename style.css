@@ -1,0 +1,88 @@
+.md-icon-button {
+    margin-left: 3%;
+}
+
+.png-icon {
+    margin-right: 10%;
+}
+
+.toolbar-fixed {
+    position: fixed;
+}
+
+md-sidenav {
+    position: fixed !important;
+}
+
+md-backdrop~md-content {
+    position: fixed;
+    overflow: hidden;
+}
+
+md-chip {
+    color: #FFF;
+    background-color: #008000;
+}
+
+md-card-title-text {
+    color: #212121;
+    line-height: normal;
+    text-align: justify;
+}
+
+md-card-content {
+    line-height: normal;
+    text-align: justify;
+    color: #424242;
+}
+
+.dataPublicacao {
+    float: right;
+    position: relative;
+    top: 20px;
+}
+
+.iconSize {
+    width: 48px;
+    height: 48px;
+}
+
+
+/* 
+ * ANGULAR MATERIAL SWITCH => The bar:
+ */
+
+md-switch .md-bar {
+    background-color: #9E9E9E;
+    /* set not selected bar color */
+}
+
+md-switch.md-checked .md-bar {
+    background-color: green;
+    /* set selected bar color */
+}
+
+md-switch[disabled] .md-bar {
+    background-color: rgba(51, 51, 51, .15);
+    /* set disabled bar color */
+}
+
+
+/* 
+ * ANGULAR MATERIAL SWITCH => The switch:
+ */
+
+md-switch .md-thumb {
+    color: rgb(158, 158, 158);
+    /* not selected switch color */
+}
+
+md-switch.md-checked .md-thumb {
+    background-color: rgb(255, 255, 255);
+    /* selected switch color */
+}
+
+md-switch[disabled] .md-thumb {
+    background-color: rgb(255, 255, 255);
+    /* disabled switch color */
+}

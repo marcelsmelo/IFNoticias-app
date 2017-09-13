@@ -1,0 +1,27 @@
+{
+  "name": "IFNoticias-app",
+  "main": "index.html",
+  "authors": [
+    "Marcel Melo <marcel.msmelo@gmail.com>"
+  ],
+  "description": "App para acesso as notícias do site do IFGoiano",
+  "keywords": [
+    "app",
+    "cordova",
+    "noticias",
+    "ifgoiano"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.4",
+    "angular-route": "^1.6.4"
+  }
+}

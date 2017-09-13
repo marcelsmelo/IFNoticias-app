@@ -1,0 +1,38 @@
+<div ng-controller="NoticiasController" ng-cloak flex ng-init="carregaNoticias()">
+
+    <md-content flex style="height: 600px;">
+
+        <div layout-align="top center">
+            <md-list>
+                <md-list-item class="md-2-line" ng-repeat="item in news" ng-click="null">
+                    <div class="md-list-item" layout="column">
+                        <md-card>
+                            <md-card-title layout="row">
+                                <md-card-title-text>
+                                    <span class="md-headline">{{item.title}}</span>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-card-content>
+                                <p>
+                                    {{item.subtitle}}
+                                </p>
+                                <md-chips>
+                                    <md-chip style="color: #FFF;background-color: #008000;">{{item.campus}}</md-chip>
+                                </md-chips>
+                                <md-card-actions layout="row" layout-align="end right">
+                                    <span class="">{{item.dateString}}</span>
+                                </md-card-actions>
+
+                            </md-card-content>
+                        </md-card>
+
+                    </div>
+                    <md-icon class="md-secondary" style="color:#000" ng-class="iconSize">chevron_right</md-icon>
+                </md-list-item>
+            </md-list>
+        </div>
+    </md-content>
+
+</div>
+</div>
+</div>
